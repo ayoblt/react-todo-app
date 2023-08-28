@@ -27,7 +27,7 @@ export default function TodoCard({
         onDeleteItem={onDeleteItem}
       />
       <TodoOverview todoItems={todoItems} onClearItems={onClearItems}>
-        <TodoFilter mobile={false} onFilterItems={onFilterItems} />
+        <TodoFilter mobile={false} onFilterItems={onFilterItems} filterBy={filterBy} />
       </TodoOverview>
     </div>
   );

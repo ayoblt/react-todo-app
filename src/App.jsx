@@ -6,19 +6,6 @@ import { useEffect, useState } from "react";
 import TodoCard from "./components/todoCard";
 import TodoFilter from "./components/todoFilter";
 
-// const todoItems = [
-//   { id: 1, description: "Complete online JavaScript course", completed: true },
-//   { id: 2, description: "Jog around the pack", completed: false },
-//   { id: 3, description: "10 minutes meditation", completed: false },
-//   { id: 4, description: "Read for 1 hour", completed: false },
-//   { id: 5, description: "Pick up the groceries", completed: true },
-//   {
-//     id: 6,
-//     description: "Complete Todo App on Frontend Mentor",
-//     completed: false,
-//   },
-// ];
-
 export default function App() {
   // const [items, setItems] = useState([]);
   const [items, setItems] = useState(() => {
@@ -100,7 +87,11 @@ export default function App() {
           filterBy={filterBy}
           onFilterItems={handleFilterItems}
         />
-        <TodoFilter mobile={true} onFilterItems={handleFilterItems} />
+        <TodoFilter
+          mobile={true}
+          onFilterItems={handleFilterItems}
+          filterBy={filterBy}
+        />
       </Content>
     </div>
   );

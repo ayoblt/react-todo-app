@@ -1,8 +1,8 @@
-export function Button({ hoverColor, fontWeight, onClick, children }) {
+export function Button({ className, onClick, children }) {
   return (
     <button
       onClick={onClick}
-      className={`hover:${hoverColor} font-${fontWeight}`}
+      className={className}
     >
       {children}
     </button>
