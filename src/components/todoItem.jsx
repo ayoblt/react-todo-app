@@ -38,7 +38,7 @@ export default function TodoItem({ item, onToggleItem, onDeleteItem }) {
           e.stopPropagation();
           onDeleteItem(item.id);
         }}
-        className="invisible group-hover:visible"
+        className="visible sm:invisible sm:group-hover:visible "
       />
     </li>
   );
